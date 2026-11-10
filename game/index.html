@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#05060a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Neon Duel</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud" class="hidden">
+  <div class="hud-top">
+    <div id="hearts"></div>
+    <div class="score" id="score">0</div>
+    <div id="right">
+      <div id="wave">WAVE 1</div>
+      <div id="combo"></div>
+    </div>
+  </div>
+  <div id="powers"></div>
+</div>
+
+<div id="waveBanner" class="hidden"></div>
+
+<div id="menu" class="overlay">
+  <h1>NEON<span>DUEL</span></h1>
+  <p class="tag">survive &middot; dodge &middot; slaughter</p>
+  <button id="startBtn">PLAY</button>
+  <div class="best" id="menuBest"></div>
+  <div class="hints" id="hints"></div>
+  <div class="keys" id="keyhints"></div>
+</div>
+
+<div id="paused" class="overlay hidden">
+  <h2>PAUSED</h2>
+  <button id="resumeBtn">RESUME</button>
+</div>
+
+<div id="over" class="overlay hidden">
+  <h2>GAME OVER</h2>
+  <div class="final" id="finalScore"></div>
+  <div class="final" id="best"></div>
+  <button id="retryBtn">PLAY AGAIN</button>
+  <div class="keys" id="overhints"></div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>

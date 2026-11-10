@@ -1,0 +1,19 @@
+{
+  "name": "Neon Duel",
+  "short_name": "Neon Duel",
+  "description": "Twin-stick neon arena survival. Survive, dodge, slaughter.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#05060a",
+  "theme_color": "#05060a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
